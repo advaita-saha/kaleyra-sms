@@ -1,3 +1,4 @@
+# Created by @advaitasaha
 # Imports
 import requests
 import json
@@ -21,7 +22,7 @@ def send_sms(number):
         'to': '+91{}'.format(str(number)),
         'sender': senderID,
         'source': 'API',
-        'body': 'Thank you {} for shopping with Churidar Gharana.'.format('name'), # change the body of the messages
+        'body': 'Thank you {} for using this software.'.format('name'), # change the body of the messages
         'template_id': '1207161891861378858', # enter registered template id
     }
 
@@ -51,7 +52,7 @@ def send_flash_sms(number):
     'to': '+91{}'.format(str(number)),
     'type': 'TXN',
     'sender': senderID,
-    'body': 'Thank you {} for shopping with Churidar Gharana.'.format('name'), # change the body of the messages
+    'body': 'Thank you {} for using this software.'.format('name'), # change the body of the messages
     'flash': '1'
     }
 
